@@ -25,10 +25,10 @@ By the end, you'll have:
 - [⚙️ Configure your network](#️-configure-your-network)
 - [🚀 Op-deployer](#-op-deployer)
 - [💻 Op-geth](#-op-geth)
-- [Op-node](#-op-node)
-- [Op-batcher](#-op-batcher)
-- [Op-proposer](#-op-proposer)
-- [Connect Wallet To Chain](#-connect-wallet-to-chain)
+- [☊ Op-node](#-op-node)
+- [🅱 Op-batcher](#-op-batcher)
+- [🅿️ Op-proposer](#-op-proposer)
+- [💳 Connect Wallet To Chain](#-connect-wallet-to-chain)
 
 ## 📂 Setting Up Project Folder
 
@@ -337,7 +337,7 @@ build/bin/geth init --state.scheme=hash --datadir=datadir ~/op-deployer/.deploye
 
 your op-geth is now up and running. Hurray!🎉
 
-## Op-node
+## ☊ Op-node
 
 follow the commands one by one to run a successful build for op-node.
 
@@ -360,7 +360,7 @@ just op-node ⁠// this command builds the go program ⁠
   --p2p.peerstore.path=opnode_peerstore_db
 ```
 
-## Op-batcher
+## 🅱 Op-batcher
 
 follow the commands one by one to run a successful build for op-batcher.
 
@@ -387,7 +387,7 @@ just op-batcher ⁠
   --private-key=<your $BATCHER_PRIVATE_KEY>
 ```
 
-## Op-proposer
+## 🅿️ Op-proposer
 
 follow the commands one by one to run a successful build for op-proposer.
 
@@ -418,7 +418,7 @@ Note:
 // _this should be path to your .deploy file you created in the first optimism/ folder and replace above_
 ```
 
-## Connect Your wallet to your chain
+## 💳 Connect Your wallet to your chain
 
 To connect your wallet to your chain, Open a browser where you have a wallet and open this url to configure
 [wallect connection link](https://chainid.link/?network=opstack-getting-started)
