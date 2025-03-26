@@ -25,7 +25,10 @@ By the end, you'll have:
 - [⚙️ Configure your network](#️-configure-your-network)
 - [🚀 Op-deployer](#-op-deployer)
 - [💻 Op-geth](#-op-geth)
-- [📄 License](#-license)
+- [Op-node](#-op-node)
+- [Op-batcher](#-op-batcher)
+- [Op-proposer](#-op-proposer)
+- [Connect Wallet To Chain](#-connect-wallet-to-chain)
 
 ## 📂 Setting Up Project Folder
 
@@ -435,7 +438,3 @@ to get contract address:
 ```
 cat deployments/getting-started/.deploy | jq -r .L1StandardBridgeProxy
 ```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
