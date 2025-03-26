@@ -185,14 +185,14 @@ cast codesize 0x4e59b44847b379578588920cA78FbF26c0B4956C --rpc-url $L1_RPC_URL
 
 If the command returns `0` then the contract has not been deployed yet. If the command returns `69` then the contract has been deployed and you can safely skip this section.
 
-:::warning
+**⚠️warning**
 I ran into failed builds for `op-deployer`, `op-node`, `op-batcher`, `op-proposer` in the first optimism repo cloned (i'm guessing WIP, cos there are still ongoing merges and prs, mostlikey cause od the break). But i was able to fix by using a different optimisim git repo. we are about to clone a new optimism folder and we will refer to it as
 `optimism2`
 
 Dependency needed: intsall `just` a command runner
 linux: https://snapcraft.io/just
 mac: `brew install just`
-:::
+
 
 ## Cloning Optimism2 for stable build of `op-deployer`, `op-node`, `op-batcher`, `op-proposer`
 
@@ -206,9 +206,8 @@ git clone https://github.com/ethereum-optimism/optimism.git
 
 The op-deployer tool simplifies the creation of genesis and rollup configuration files (genesis.json and rollup.json). These files are crucial for initializing the execution client (op-geth) and consensus client (op-node) for your network.
 
-:::info
-**NOTE:** you'll need to have sufficient gas to do this. most preferrable when there is low network congestion.
-:::
+**ℹ️ INFO**  
+ you'll need to have sufficient gas to do this. most preferrable when there is low network congestion.
 
 ```
 forge script scripts/Deploy.s.sol:Deploy --private-key $GS_ADMIN_PRIVATE_KEY --broadcast --rpc-url $L1_RPC_URL --slow
@@ -232,9 +231,9 @@ go build -o ~/op-deployer/bin/op-deployer ./cmd/op-deployer
 chmod +x ~/op-deployer/bin/op-deployer
 ```
 
-:::info
+**ℹ️ INFO**  
 the op-deployer gets built to tour home `~/` directory.
-:::
+
 
 ```
 cd ~/op-deployer
